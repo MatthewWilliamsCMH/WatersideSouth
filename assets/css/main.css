@@ -1,6 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
-  font-size: 16;
+  font-size: 16px;
 }
 body {
-  font-family: Arial, sans-serif;
+  margin: 20px;
+  font-family: 'Fira Sans', sans-serif;
+  background-image: url('../images/florida-sunset.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.navbar {
+  position: fixed;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  display: flex;
+  width: 100%;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: #2c7da0;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #2c7da0;
+}
+
+.nav-links.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  right: 1rem;
+  background: white;
+  padding: 1rem;
+  width: 200px;
+  gap: 1rem;
+}
+section:first-of-type {
+  margin-top: 120px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #2c7da0;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-top: 10px;
+}
+
+.widget-container {
+  position: fixed;
+  bottom: 0;
+  left: 20;
+  width: 100%;
 }
