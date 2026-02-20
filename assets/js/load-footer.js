@@ -5,6 +5,7 @@ fetch('footer.html')
   .then((response) => response.text())
   .then((data) => {
     document.getElementById('footer-placeholder').innerHTML = data;
+    document.getElementById('year').textContent = new Date().getFullYear();
 
     const oneDayCard = document.getElementById('oneDayCardEl');
     const fiveDayCards = document.getElementById('fiveDayCardsEl');
