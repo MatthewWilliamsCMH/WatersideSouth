@@ -1,3 +1,4 @@
+/* Global CSS */
 * {
   margin: 0;
   padding: 0;
@@ -6,25 +7,28 @@
 
 html {
   font-size: 20px;
+  line-height: 1.5;
 }
+
 body {
+  display: flex;
+  flex-direction: column;
   margin: 20px;
-  padding-top: 150px;
   font-family: 'Fira Sans', sans-serif;
   background-image: url('../images/florida-sunset.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  height: 100vh;
+  width: 100%;
 }
 
+/* Header CSS */
 .header-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding: 20px;
+  margin: -20px;
+  padding: 20px 20px 0px 20px;
   width: 100%;
-  height: 150px;
+  height: fit-content;
   background-color: white;
 }
 
@@ -41,11 +45,6 @@ body {
 .nav-links {
   list-style: none;
   display: none;
-}
-
-a {
-  text-decoration: none;
-  color: #2c7da0;
 }
 
 .hamburger {
@@ -72,8 +71,10 @@ a {
   width: 200px;
   gap: 1rem;
 }
-section:first-of-type {
-  margin-top: 120px;
+
+/* Main Content CSS */
+.main-container {
+  margin-right: 40px;
 }
 
 h1,
@@ -87,15 +88,22 @@ h6 {
 }
 
 p {
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 
+a {
+  text-decoration: none;
+  color: #2c7da0;
+}
+
+/* Footer CSS */
 .footer-container {
   font-size: 14px;
-  position: fixed;
+  position: absolute;
   bottom: 0;
-  padding: 10px;
-  min-width: 100%;
+  margin: 0px -20px 0px -20px;
+  padding: 6px 10px;
+  width: 100%;
   background-color: rgb(44, 125, 160, 0.8);
 }
 
@@ -107,7 +115,6 @@ h3 {
 
 .footer-container ul {
   list-style: none;
-  line-height: 1.5;
 }
 
 .weather-cards {
@@ -125,7 +132,8 @@ h3 {
 }
 
 .weather-cards img {
-  height: 40px;
+  height: 20px;
+  vertical-align: bottom;
 }
 
 .weather-cards p {
@@ -139,7 +147,7 @@ h3 {
 }
 
 #fiveDayCardsEl {
-  text-align: center;
+  text-align: left;
   display: flex;
   flex-direction: row;
   align-items: center;
