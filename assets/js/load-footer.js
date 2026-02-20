@@ -1,7 +1,7 @@
 const city = 'St. Petersburg,US';
 const apiKey = '671277334815afdc86042e04b061da17';
 
-fetch('footer.html')
+fetch('/pages/footer.html')
   .then((response) => response.text())
   .then((data) => {
     document.getElementById('footer-placeholder').innerHTML = data;
