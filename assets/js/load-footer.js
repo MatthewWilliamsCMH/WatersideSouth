@@ -32,7 +32,7 @@ function getWeather(oneDayCard, fiveDayCards) {
       createCurrentCard(current, oneDayCard);
 
       const daily = data.list.filter((item) => item.dt_txt.includes('15:00:00'));
-      createFiveDayCards(daily.slice(1, 5), fiveDayCards);
+      createFiveDayCards(daily.slice(0, 5), fiveDayCards);
     })
     .catch((error) => console.error('Weather fetch error:', error));
 }
