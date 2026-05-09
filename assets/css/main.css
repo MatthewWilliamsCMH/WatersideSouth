@@ -294,6 +294,16 @@ iframe {
   height: 600px;
 }
 
+/*FAQ Page CSS */
+#faq-list dt {
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+#faq-list dd {
+  margin-bottom: 1rem;
+}
+
 /* PDF Icon */
 a[href$=".pdf"]::before {
   content: "📄 "; /* Page emoji */
@@ -307,10 +317,11 @@ a[href$=".docx"]::before {
 }
 
 /* External Link / Hyperlink Icon */
-/* This targets links starting with http that DON'T go to your own site */
+/* This targets links starting with http that DON'T go to your own site 
 a[href^="http"]::after {
   content: " ↗";
   font-size: 0.8em;
   color: #888;
   margin-left: 4px;
 }
+*/
